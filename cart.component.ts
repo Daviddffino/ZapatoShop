@@ -31,3 +31,7 @@ export class CartComponent implements OnInit {
     this.getCart(); // Actualiza el carrito después de eliminar un producto
   }
 }
+removeFromCart(shoe: Shoe): void {
+  this.shoeService.removeFromCart(shoe);
+  this.getCart(); // Actualiza el carrito después de eliminar un producto
+}
