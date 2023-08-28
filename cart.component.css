@@ -1,0 +1,25 @@
+.cart {
+  padding: 20px;
+}
+
+.cart-item {
+  display: flex;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.cart-item-image {
+  max-width: 100px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.cart-item-details {
+  flex: 1;
+}
+
+.cart-total {
+  text-align: right;
+  margin-top: 20px;
+}
