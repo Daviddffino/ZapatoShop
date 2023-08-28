@@ -29,3 +29,13 @@
   </div>
 </div>
 <button (click)="removeFromCart(shoe)">Remove</button>
+<div class="cart">
+  <h2>Your Cart</h2>
+  <div *ngFor="let shoe of cart" class="cart-item">
+    <!-- ... (detalles del producto) ... -->
+  </div>
+  <div class="cart-total">
+    <p>Total: ${{ total }}</p>
+    <button (click)="checkout()">Checkout</button>
+  </div>
+</div>
