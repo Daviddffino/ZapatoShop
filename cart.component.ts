@@ -38,3 +38,10 @@ removeFromCart(shoe: Shoe): void {
 calculateTotal(): void {
   this.total = this.cart.reduce((total, shoe) => total + shoe.price, 0);
 }
+checkout(): void {
+  // Aquí podrías realizar acciones como mostrar una confirmación,
+  // enviar una solicitud de compra a un servidor, etc.
+  alert('Thank you for your purchase!');
+  this.cart = []; // Vacía el carrito después de la compra (simulado)
+  this.calculateTotal(); // Actualiza el total después de vaciar el carrito
+}
