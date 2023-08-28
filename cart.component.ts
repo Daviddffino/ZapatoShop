@@ -35,3 +35,6 @@ removeFromCart(shoe: Shoe): void {
   this.shoeService.removeFromCart(shoe);
   this.getCart(); // Actualiza el carrito después de eliminar un producto
 }
+calculateTotal(): void {
+  this.total = this.cart.reduce((total, shoe) => total + shoe.price, 0);
+}
