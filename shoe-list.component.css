@@ -9,3 +9,30 @@
   max-width: 100%;
   height: auto;
 }
+.shoe-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.shoe-card {
+  width: calc(33.33% - 20px);
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.shoe-image-container {
+  text-align: center;
+}
+
+.shoe-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.shoe-details {
+  margin-top: 10px;
+}
