@@ -1,0 +1,9 @@
+<div *ngFor="let shoe of shoes" class="shoe-card">
+  <img [src]="shoe.image" alt="{{ shoe.name }}" class="shoe-image">
+  <h2>{{ shoe.name }}</h2>
+  <p>{{ shoe.category }}</p>
+  <p>Price: ${{ shoe.price }}</p>
+  <p>Tags: {{ shoe.tags.join(', ') }}</p>
+  <p>Rating: {{ shoe.rating }}</p>
+  <button (click)="addToCart(shoe)">Add to Cart</button>
+</div>
