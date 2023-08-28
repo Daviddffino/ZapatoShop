@@ -1,0 +1,14 @@
+<div class="cart">
+  <h2>Your Cart</h2>
+  <div *ngFor="let shoe of cart" class="cart-item">
+    <img [src]="shoe.image" alt="{{ shoe.name }}" class="cart-item-image">
+    <div class="cart-item-details">
+      <h3>{{ shoe.name }}</h3>
+      <p>Price: ${{ shoe.price }}</p>
+      <button (click)="removeFromCart(shoe)">Remove</button>
+    </div>
+  </div>
+  <div class="cart-total">
+    <p>Total: ${{ total }}</p>
+  </div>
+</div>
