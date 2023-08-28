@@ -7,3 +7,18 @@
   <p>Rating: {{ shoe.rating }}</p>
   <button (click)="addToCart(shoe)">Add to Cart</button>
 </div>
+<div class="shoe-list">
+  <div *ngFor="let shoe of shoes" class="shoe-card">
+    <div class="shoe-image-container">
+      <img [src]="shoe.image" alt="{{ shoe.name }}" class="shoe-image">
+    </div>
+    <div class="shoe-details">
+      <h2>{{ shoe.name }}</h2>
+      <p>Category: {{ shoe.category }}</p>
+      <p>Price: ${{ shoe.price }}</p>
+      <p>Tags: {{ shoe.tags.join(', ') }}</p>
+      <p>Rating: {{ shoe.rating }}</p>
+      <button (click)="addToCart(shoe)">Add to Cart</button>
+    </div>
+  </div>
+</div>
